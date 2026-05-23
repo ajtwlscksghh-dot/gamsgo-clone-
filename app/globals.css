@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #0a0a14;
-  --bg-secondary: #0f0f1e;
-  --bg-card: #13132a;
-  --bg-card-hover: #1a1a35;
-  --border: #1e1e3a;
-  --purple-primary: #7c3aed;
-  --purple-light: #a78bfa;
-  --purple-dark: #5b21b6;
-  --text-primary: #f1f0ff;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #161616;
+  --bg-card-hover: #1e1e1e;
+  --border: #222222;
+  --gold-primary: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dark: #9a7a2e;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
 }
 
 * {
@@ -36,23 +36,23 @@ html {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--purple-dark);
+  background: #333;
   border-radius: 3px;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #a78bfa, #7c3aed, #4f46e5);
+  background: linear-gradient(135deg, #e8c97a, #c9a84c, #9a7a2e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  background: linear-gradient(135deg, #c9a84c, #9a7a2e);
 }
 
-.glow-purple {
-  box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+.glow-gold {
+  box-shadow: 0 0 30px rgba(201, 168, 76, 0.25);
 }
 
 .card-hover {
@@ -60,7 +60,7 @@ html {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 20px 40px rgba(201, 168, 76, 0.12);
 }
 
 @keyframes float {
@@ -73,8 +73,8 @@ html {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(124, 58, 237, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(124, 58, 237, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(201, 168, 76, 0.4); }
 }
 
 .pulse-glow {
