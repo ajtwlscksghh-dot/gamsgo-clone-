@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,14 +19,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div
-              className="w-8 h-8 rounded-lg flex items-center justify-center text-black font-bold text-sm"
-              style={{ background: "linear-gradient(135deg, #e8c97a, #c9a84c)" }}
-            >
-              S
-            </div>
-            <span className="text-white font-bold text-lg tracking-tight">SubsShare</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/subsshare-logo-dark.svg"
+              alt="SubsShare"
+              width={160}
+              height={46}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

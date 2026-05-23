@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,14 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-black font-bold text-sm"
-                style={{ background: "linear-gradient(135deg, #e8c97a, #c9a84c)" }}
-              >
-                S
-              </div>
-              <span className="text-white font-bold text-lg">SubsShare</span>
+            <div className="mb-4">
+              <Image
+                src="/subsshare-logo-dark.svg"
+                alt="SubsShare"
+                width={150}
+                height={43}
+              />
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed mb-4">
               프리미엄 구독 서비스를 합리적인 가격으로 이용하세요.
